@@ -10,6 +10,21 @@ public class Actor {
         this.gender = gender;
         this.age = age;
     }
+   public Actor(){
+
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
 
     public String getName() {
         return name;
