@@ -23,6 +23,7 @@ public class Actor
     }
 
     public void setName(String name) {
+
         this.name = name;
     }
 
@@ -34,7 +35,8 @@ public class Actor
         this.age = age;
     }
 
-    public String getName() {
+    public String getName()
+    {
         return name;
     }
 
