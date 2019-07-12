@@ -15,5 +15,6 @@
     <bean id="movieObj2" class="com.stackroute.domain.Movie" autowire="byType"/>
     <bean id="movieObj3" class="com.stackroute.domain.Movie" autowire="constructor"/>
 
+  <bean id="beanObj" class="com.stackroute.domain.BeanLifecycleDemoBean" init-method="customInit" destroy-method="customDestroy"></bean>
 
 </beans>
