@@ -16,5 +16,4 @@
     <bean id="movieObj3" class="com.stackroute.domain.Movie" autowire="constructor"/>
 
 
-
 </beans>
