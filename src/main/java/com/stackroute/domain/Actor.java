@@ -5,6 +5,7 @@ public class Actor {
     private String gender;
     private int age;
 
+    //use setter and getter methods
 
     public void setName(String name) {
 

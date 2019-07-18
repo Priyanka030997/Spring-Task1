@@ -11,17 +11,17 @@ import org.springframework.core.io.FileSystemResource;
 public class Main {
     public static void main(String args[])
     {
-        //use ApplicationContext
+        //By using ApplicationContext
         ApplicationContext context=new ClassPathXmlApplicationContext("beans.xml");
         Movie movie=context.getBean("movie",Movie.class);
         movie.display();
 
-        //use Beanfactory
+        //By using Beanfactory
         BeanFactory factory=new ClassPathXmlApplicationContext("beans.xml");
         movie=factory.getBean("movie",Movie.class);
         movie.display();
 
-        //use BeanDefinitionReader
+        //By using BeanDefinitionReader
         DefaultListableBeanFactory beanFactory = new DefaultListableBeanFactory();
         BeanDefinitionReader reader = new XmlBeanDefinitionReader(beanFactory);
         reader.loadBeanDefinitions(new FileSystemResource("src/main/resources/beans.xml"));

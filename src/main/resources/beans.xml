@@ -3,11 +3,11 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
       http://www.springframework.org/schema/beans/spring-beans.xsd">
-
+<!--create bean for movie class and refer actorobject in movie class<!- -->
     <bean id="movie" class="com.stackroute.domain.Movie">
         <property name="actor" ref="actorref"></property>
     </bean>
-
+<!--create bean for actor class <!- -->
     <bean id="actorref" class="com.stackroute.domain.Actor">
         <property name="name" value="priya"/>
         <property name="gender" value="female"/>
