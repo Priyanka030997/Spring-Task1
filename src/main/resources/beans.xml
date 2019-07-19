@@ -4,13 +4,14 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
       http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+    <!--created bean for actor class<!- -->
     <bean id="actor" class="com.stackroute.domain.Actor">
         <property name="name" value="priya"></property>
         <property name="gender" value="female"></property>
         <property name="age" value="21"></property>
     </bean>
 
-
+<!--created bean for movie class and used autowire and constructor<!- -->
     <bean id="movieObj1" class="com.stackroute.domain.Movie" autowire="byName"/>
     <bean id="movieObj2" class="com.stackroute.domain.Movie" autowire="byType"/>
     <bean id="movieObj3" class="com.stackroute.domain.Movie" autowire="constructor"/>

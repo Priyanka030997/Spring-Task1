@@ -10,9 +10,6 @@ public class Actor
     private String gender;
     private int age;
 
-
-
-
     public Actor(String name, String gender, int age) {
         this.name = name;
         this.gender = gender;
@@ -21,7 +18,7 @@ public class Actor
    public Actor(){
 
     }
-
+//used setter and getter methods
     public void setName(String name) {
         this.name = name;
     }
