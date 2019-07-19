@@ -4,7 +4,7 @@ import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 
 public class BeanLifecycleDemoBean implements InitializingBean, DisposableBean {
-
+//used init and destroy methods
     public void afterPropertiesSet() throws Exception {
         System.out.println("Bean initialization code");
     }
