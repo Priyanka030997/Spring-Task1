@@ -3,7 +3,7 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
       http://www.springframework.org/schema/beans/spring-beans.xsd">
-
+<!--created bean for movie class and refer actor class and use prototype scope<!- -->
     <bean name="movieA,movieB" class="com.stackroute.domain.Movie" scope="prototype">
         <constructor-arg name="actor" ref="actorref1"> </constructor-arg>
     </bean>
@@ -13,7 +13,7 @@
     <bean name="movieE,movieF" class="com.stackroute.domain.Movie" scope="prototype">
         <constructor-arg name="actor" ref="actorref3"></constructor-arg>
     </bean>
-
+<!-- created bean for actor class and use use constructor argument<!- -->
     <bean id="actorref1" class="com.stackroute.domain.Actor">
         <constructor-arg name="name" value="priya" type="String"/>
         <constructor-arg name="gender" value="female" type="String"/>
