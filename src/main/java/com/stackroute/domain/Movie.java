@@ -10,17 +10,17 @@ public class Movie {
 
     }
 
-
+//used default constructor
     public Actor getActor() {
 
         return actor;
     }
-
+//used paramaterised constructor
     public void setActor(Actor actor)
     {
         this.actor = actor;
     }
-
+//displayed the actor details
     public void display()
 
     {

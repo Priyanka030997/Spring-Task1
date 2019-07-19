@@ -10,6 +10,7 @@ public class Actor {
         this.gender = gender;
         this.age = age;
     }
+    //used setter and getter methods
    public Actor(){
 
     }
